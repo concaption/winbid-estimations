@@ -1,0 +1,1008 @@
+/* Color Variable */
+@media (max-width: 767px) {
+  /*-----  Home Page One Start -----*/
+  /* Custom CSS */
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .theme-btn .default-btn {
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 5px;
+    margin-right: 0;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title span {
+    font-size: 15px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  /* Header CSS */
+  .header-area {
+    border-bottom: 0;
+  }
+  .header-area .header-left {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .header-area .header-right {
+    text-align: center;
+  }
+  .header-area .header-right ul li {
+    margin-left: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .header-area .header-right ul li::before {
+    display: none;
+  }
+  .header-area .header-right ul li:last-child {
+    margin-bottom: 0;
+  }
+  /* Navbar CSS */
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mobile-nav .navbar-nav {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .navbar-area .mobile-nav .logo {
+    position: absolute;
+    left: 15px;
+    z-index: 99999;
+    max-width: 75px;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #1f1c0c;
+    padding: 0;
+    -webkit-box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    padding: 15px 15px 0 0;
+    color: #ffffff;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    background: #ffea00;
+    margin-top: -5px;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav .nav-item a {
+    color: #3c0c70;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  /* Banner CSS */
+  .banner-section {
+    text-align: center;
+    height: 100%;
+    padding-top: 150px;
+  }
+  .banner-section .banner-text {
+    padding-bottom: 100px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  .banner-section .banner-text p {
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-text .theme-btn .default-btn {
+    margin: 0 5px;
+  }
+  .banner-section .banner-img {
+    position: relative;
+    right: 0;
+    max-width: 100%;
+    margin: auto;
+    left: 0;
+  }
+  /* About Section CSS */
+  .about-section .section-title {
+    margin-bottom: 25px;
+  }
+  .about-section .about-text {
+    padding: 30px 20px;
+    margin: 0 15px;
+  }
+  .about-section .about-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about-section .about-text ul li {
+    font-size: 16px;
+  }
+  .about-section .about-text .authore-info {
+    margin-bottom: 25px;
+  }
+  /* Service CSS */
+  .service-section {
+    padding-bottom: 120px;
+  }
+  .service-section .section-title {
+    margin-bottom: 25px;
+  }
+  .service-section .service-slider .service-items {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+  }
+  .service-section .service-slider .service-items .service-text {
+    margin: 0 10px 10px;
+  }
+  .service-section .service-slider .owl-prev {
+    opacity: 1;
+    left: 30% !important;
+    top: inherit !important;
+    bottom: -120px;
+  }
+  .service-section .service-slider .owl-prev:hover {
+    left: 30% !important;
+  }
+  .service-section .service-slider .owl-next {
+    opacity: 1;
+    right: 30% !important;
+    top: inherit !important;
+    bottom: -120px;
+  }
+  .service-section .service-slider .owl-next:hover {
+    right: 30% !important;
+  }
+  .service-section .service-slider:hover .owl-next {
+    right: 30% !important;
+  }
+  .service-section .service-slider:hover .owl-prev {
+    left: 30% !important;
+  }
+  /* Counter CSS */
+  .counter-section .counter-text {
+    padding: 20px 20px;
+  }
+  /* Project Section CSS */
+  .project-section {
+    padding-bottom: 115px;
+  }
+  .project-section .project-slider .project-item .project-link p {
+    padding: 10px 50px 10px 10px;
+    font-size: 14px;
+  }
+  .project-section .project-slider .owl-prev {
+    opacity: 1;
+    left: 30px !important;
+    top: inherit !important;
+    bottom: -115px;
+  }
+  .project-section .project-slider .owl-prev:hover {
+    left: 30px !important;
+  }
+  .project-section .project-slider .owl-next {
+    opacity: 1;
+    right: 30px !important;
+    top: inherit !important;
+    bottom: -115px;
+  }
+  .project-section .project-slider .owl-next:hover {
+    right: 30px !important;
+  }
+  .project-section .project-slider:hover .owl-next {
+    right: 30px !important;
+  }
+  .project-section .project-slider:hover .owl-prev {
+    left: 30px !important;
+  }
+  /* Video Section CSS */
+  .video-section .video-text a {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+  }
+  .video-section .video-text a i {
+    font-size: 30px;
+  }
+  .video-section .video-text h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  /* Blog Section CSS */
+  .blog-section .blog-card .blog-text h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .blog-section .blog-card .blog-text p {
+    margin-bottom: 10px;
+  }
+  .blog-section .blog-link {
+    margin-top: 10px;
+  }
+  /* Footer Section CSS */
+  .footer-area .pl-35 {
+    padding-left: 0;
+  }
+  .footer-area .footer-widget {
+    margin-bottom: 35px;
+  }
+  .footer-area .footer-widget h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer-area .footer-widget ul li {
+    font-size: 14px;
+  }
+  .footer-area .footer-bottom {
+    margin-top: 15px;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .footer-area .footer-bottom ul {
+    margin-bottom: 10px;
+  }
+  .footer-area .footer-bottom ul li {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  .footer-area .footer-bottom .copyright-text {
+    text-align: center;
+  }
+  .footer-area .footer-bottom .copyright-text p {
+    font-size: 14px;
+  }
+  /*-----  Home Page One End -----*/
+  /*-----  Home Page Two End -----*/
+  /* Navbar CSS */
+  .navbar-style-two .appoint-btn {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-slider {
+    text-align: center;
+  }
+  .banner-slider .slider-items {
+    padding-top: 140px;
+    padding-bottom: 150px;
+    height: 100%;
+    font-size: 25px;
+  }
+  .banner-slider .slider-items .slider-text h1 {
+    font-size: 25px;
+  }
+  .banner-slider .owl-prev {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    line-height: 40px !important;
+    top: inherit;
+    bottom: 80px;
+    left: 20%;
+  }
+  .banner-slider .owl-next {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    line-height: 40px !important;
+    top: inherit;
+    bottom: 80px;
+    right: 20%;
+  }
+  /* Facilities CSS */
+  .facilities-section .p-0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .facilities-section .facilities-img {
+    height: 260px;
+    margin-bottom: 15px;
+  }
+  /* Service CSS */
+  .service-style-three {
+    padding-bottom: 20px;
+  }
+  .service-style-three .service-card {
+    padding: 40px 15px 30px 15px;
+  }
+  .service-style-three .service-card h3 {
+    font-size: 18px;
+  }
+  /*-----  Home Page Two End -----*/
+  /*-----  Home Page Three End -----*/
+  .banner-slider .slider-items .slider-text .theme-btn .default-btn {
+    margin: 0 5px;
+  }
+  .banner-slider .slider-items .slider-text .theme-btn .video-btn i {
+    left: 0;
+  }
+  .join-section .join-img {
+    position: relative;
+    height: 350px;
+  }
+  .join-section .join-text {
+    padding: 20px;
+    margin: 0px 15px 50px;
+  }
+  /*-----  Home Page Three End -----*/
+  /*-----  About Page Start -----*/
+  .page-title {
+    padding: 150px 0 100px;
+  }
+  .page-title .text-start, .page-title .text-end {
+    text-align: center !important;
+  }
+  .page-title h2 {
+    font-size: 35px;
+  }
+  .page-title ul li {
+    margin-left: 0;
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .about-style-two .about-text {
+    padding-left: 0;
+  }
+  .contact-section .contact-area {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  .contact-section .contact-area .default-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .contact-section .contact-img {
+    height: 300px;
+    margin: 0 10px;
+  }
+  /*-----  About Page End -----*/
+  /*-----  Service Page Start -----*/
+  .service-style-two {
+    padding-bottom: 20px;
+  }
+  .service-style-two .service-items {
+    margin: 0 10px 30px;
+  }
+  /*-----  Service Page End -----*/
+  /*-----  Service Page Two Start -----*/
+  .service-style-four {
+    padding-bottom: 50px;
+  }
+  .service-style-four .service-slider .owl-prev, .service-style-four .service-slider .owl-next {
+    bottom: -55px;
+  }
+  .about-style-two {
+    padding-top: 50px;
+  }
+  /*-----  Service Page Two End -----*/
+  /*-----  Service Details Page Start -----*/
+  .service-details-area .service-details-text .accordions .accordion-item .accordion-title {
+    padding: 10px 15px;
+  }
+  .service-details-area .service-details-text .accordions .accordion-item .accordion-title h2 {
+    font-size: 14px;
+  }
+  /*-----  Service Details Page End -----*/
+  /*-----  Project Page One Start -----*/
+  .project-style-four {
+    padding-bottom: 105px;
+  }
+  .project-style-four .project-slider .owl-prev, .project-style-four .project-slider .owl-next {
+    bottom: -70px;
+  }
+  /*-----  Project Page One End -----*/
+  /*-----  Project Page Two Start -----*/
+  .project-style-three .project-menu ul li {
+    margin-bottom: 15px;
+  }
+  .project-style-three .p-0 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .project-style-three .project-card {
+    margin-bottom: 30px;
+  }
+  .project-style-three .project-card a i {
+    top: 40%;
+  }
+  /*-----  Project Page Two End -----*/
+  /*-----  FAQ Page Start -----*/
+  .faq-section .faq-accordian .accordions .accordion-item .accordion-title {
+    padding: 10px 15px;
+  }
+  .faq-section .faq-accordian .accordions .accordion-item .accordion-title h2 {
+    font-size: 14px;
+  }
+  /*-----  FAQ Page End -----*/
+  /*-----  Sign In Page Strat -----*/
+  .signin-section .signin-form {
+    padding: 15px;
+  }
+  /*-----  Sign In Page End -----*/
+  /*-----  Sign Up Page Start -----*/
+  .signup-section .signup-form {
+    padding: 15px;
+  }
+  /*-----  Sign Up Page End -----*/
+  /*-----  404 Page Start -----*/
+  .error-section h1 {
+    font-size: 70px;
+  }
+  .error-section h2 {
+    font-size: 30px;
+  }
+  .error-section p {
+    font-size: 14px;
+  }
+  .error-section .theme-btn .default-btn {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  /*-----  404 Page End -----*/
+  /*-----  Testimonial Page Start -----*/
+  .testimonial-section .testimonial-slider .testimonial-item .client-info {
+    text-align: center;
+  }
+  .testimonial-section .testimonial-slider .testimonial-item .client-info img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px;
+  }
+  .testimonial-section .testimonial-slider .testimonial-item .client-info h3, .testimonial-section .testimonial-slider .testimonial-item .client-info span {
+    padding-left: 0;
+  }
+  /*-----  Testimonial Page End -----*/
+  /*-----  Blog Page Start -----*/
+  .blog-section .pagination {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  /*-----  Blog Page End -----*/
+  /*-----  Blog Details Page Start -----*/
+  .blog-details-area .blog-sidebar .blog-widget .popular-post {
+    max-width: 400px;
+  }
+  .blog-details-area .blog-details-text .blog-comment {
+    padding: 20px;
+  }
+  /*-----  Blog Details Page Ebd -----*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Custom CSS */
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .theme-btn .default-btn {
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 5px;
+    margin-right: 0;
+  }
+  .section-title span {
+    font-size: 16px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+  .section-title p {
+    max-width: 500px;
+    margin: auto;
+  }
+  /*----- Home Page One Start -----*/
+  /* Header CSS */
+  .header-area .header-right {
+    text-align: center;
+  }
+  .header-area .header-right ul li {
+    font-size: 14px;
+  }
+  .header-area .header-right ul li::before {
+    display: none;
+  }
+  /* Navbar CSS */
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mobile-nav .navbar-nav {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .navbar-area .mobile-nav .logo {
+    position: absolute;
+    left: 15px;
+    z-index: 99999;
+    max-width: 75px;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #1f1c0c;
+    padding: 0;
+    -webkit-box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    padding: 15px 15px 0 0;
+    color: #ffffff;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    background: #ffea00;
+    margin-top: -5px;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav .nav-item a {
+    color: #27222c;
+  }
+  .navbar-area .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  /* Banner Section */
+  .banner-section {
+    text-align: center;
+    height: 100%;
+    padding-top: 150px;
+  }
+  .banner-section .banner-text {
+    padding-bottom: 100px;
+    margin: auto;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .banner-section .banner-text p {
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-img {
+    position: relative;
+    right: 0;
+    max-width: 100%;
+    margin: auto;
+    left: 0;
+  }
+  /* About CSS */
+  .page-title h2 {
+    font-size: 30px;
+  }
+  .about-section .about-text {
+    margin: 0 15px;
+  }
+  .about-section .about-text ul li {
+    font-size: 15px;
+  }
+  .about-section .about-text .authore-info {
+    margin-bottom: 30px;
+  }
+  /* Service CSS */
+  .service-section .service-slider .service-text p {
+    font-size: 15px;
+  }
+  .service-section .service-slider .service-items {
+    max-width: 100%;
+  }
+  .service-section .service-slider .owl-next {
+    opacity: 1;
+    right: -30px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .service-section .service-slider:hover .owl-next {
+    right: -30px !important;
+  }
+  .service-section .service-slider .owl-prev {
+    opacity: 1;
+    left: -30px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .service-section .service-slider:hover .owl-prev {
+    left: -30px !important;
+  }
+  /* Project Section CSS */
+  .project-section .project-slider .owl-next {
+    opacity: 1;
+    right: -35px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .project-section .project-slider:hover .owl-next {
+    right: -35px !important;
+  }
+  .project-section .project-slider .owl-prev {
+    opacity: 1;
+    left: -35px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .project-section .project-slider:hover .owl-prev {
+    left: -35px !important;
+  }
+  /* Team Section CSS */
+  .team-section .team-card::before {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  /* Blog Section */
+  .blog-section .blog-card .blog-text h3 {
+    font-size: 20px;
+  }
+  /* Footer Area CSS */
+  .footer-area .pl-35 {
+    padding-left: 0;
+  }
+  .footer-area .footer-widget h3 {
+    margin-bottom: 20px;
+  }
+  .footer-area .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .footer-area .footer-bottom ul {
+    margin-bottom: 10px;
+  }
+  .footer-area .footer-bottom .copyright-text {
+    text-align: center;
+  }
+  /*-----  Home Page One End -----*/
+  /*-----  Home Page Two Start -----*/
+  /* Header CSS */
+  .header-style-two .header-left a i {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 0;
+    line-height: 30px;
+  }
+  /* Navbar CSS 
+  .navbar-style-two .appoint-btn {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-slider {
+    text-align: center;
+  }
+  .banner-slider .slider-items {
+    padding-top: 140px;
+    padding-bottom: 200px;
+    height: 100%;
+  }
+  .banner-slider .slider-items .slider-text {
+    max-width: 500px;
+    margin: auto;
+  }
+  .banner-slider .slider-items .slider-text h1 {
+    font-size: 40px;
+  }
+  .banner-slider .owl-prev {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    line-height: 40px !important;
+    top: inherit;
+    bottom: 110px;
+    left: 35%;
+  }
+  .banner-slider .owl-next {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    line-height: 40px !important;
+    top: inherit;
+    bottom: 110px;
+    right: 35%;
+  }
+  /*  About CSS */
+  .about-style-two .about-text .section-title h2 {
+    margin: 0 auto 20px 0;
+  }
+  /* Facilities CSS */
+  .facilities-section .section-title h2 {
+    margin: 0 auto 20px 0;
+  }
+  .facilities-section .section-title p {
+    margin: 0 auto 0 0;
+  }
+  .facilities-section .p-0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .facilities-section .facilities-img {
+    height: 500px;
+    margin: 0 0 15px 0;
+  }
+  /* Service CSS */
+  .service-style-three .service-card {
+    padding: 40px 15px 30px 15px;
+  }
+  .service-style-three .service-card h3 {
+    font-size: 18px;
+  }
+  /* Footer CSS */
+  .footer-area .footer-widget {
+    margin-bottom: 40px;
+  }
+  .footer-area .footer-widget h3 {
+    margin-bottom: 30px;
+  }
+  /*-----  Home Page Two End -----*/
+  /*-----  Home Page Three Start -----*/
+  .banner-section .banner-text .theme-btn .default-btn {
+    padding: 10px 25px;
+    margin: 0 10px;
+  }
+  .join-section .section-title h2 {
+    margin: 0 auto 20px 0;
+  }
+  .join-section .section-title p {
+    margin: 0 auto 0 0;
+  }
+  .join-section .join-img {
+    position: relative;
+    height: 500px;
+  }
+  .join-section .join-text {
+    padding: 30px;
+    margin: 0 15px 70px;
+  }
+  /*-----  Home Page Three End -----*/
+  /* About Page Start */
+  .page-title {
+    padding: 150px 0 100px;
+  }
+  .about-style-two .about-img img {
+    width: 100%;
+  }
+  .about-style-two .about-text {
+    padding-left: 0;
+  }
+  .contact-section .contact-img {
+    height: 500px;
+  }
+  /* About Page End */
+  /* Project Page Start */
+  .project-style-three {
+    padding-bottom: 70px;
+  }
+  /* Project Page End */
+  /* Testimonial Page Start */
+  .testimonial-section .testimonial-slider .testimonial-item {
+    max-width: 100%;
+  }
+  /* Testimonial Page End */
+  /*-----  Blog Page Start -----*/
+  .blog-section .pagination {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  /*-----  Blog Page End -----*/
+  /*-----  Blog Details Page Start -----*/
+  .blog-details-area .blog-sidebar .blog-widget .popular-post {
+    max-width: 400px;
+  }
+  .blog-details-area .blog-details-text .blog-comment {
+    padding: 20px;
+  }
+  /*-----  Blog Details Page End -----*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*----- Home Page One CSS Start -----*/
+  /* Default CSS */
+  .section-title h2 {
+    max-width: 500px;
+    margin: 0 auto 15px;
+  }
+  .section-title p {
+    max-width: 600px;
+  }
+  /* Header Section CSS */
+  .header-area .header-right ul li {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .header-area .header-right ul li::before {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-section {
+    height: 100%;
+    padding: 150px 0;
+  }
+  .banner-section .banner-text {
+    max-width: 500px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+  .banner-section .banner-img {
+    right: 10%;
+    max-width: 285px;
+  }
+  /* About CSS */
+  .about-section .about-text ul li {
+    font-size: 16px;
+  }
+  /* Service CSS */
+  .service-section .service-slider .service-items {
+    max-width: 100%;
+  }
+  .service-section .service-slider .service-items .service-text p {
+    font-size: 17px;
+  }
+  .service-section .service-slider .owl-next {
+    opacity: 1;
+    right: -30px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .service-section .service-slider:hover .owl-next {
+    right: -30px !important;
+  }
+  .service-section .service-slider .owl-prev {
+    opacity: 1;
+    left: -30px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .service-section .service-slider:hover .owl-prev {
+    left: -30px !important;
+  }
+  /* Project Section CSS */
+  .project-section .project-slider .owl-next {
+    opacity: 1;
+    right: -35px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .project-section .project-slider:hover .owl-next {
+    right: -35px !important;
+  }
+  .project-section .project-slider .owl-prev {
+    opacity: 1;
+    left: -35px !important;
+    width: 30px;
+    height: 30px;
+    line-height: 34px !important;
+    font-size: 16px !important;
+  }
+  .project-section .project-slider:hover .owl-prev {
+    left: -35px !important;
+  }
+  /* Team CSS */
+  .team-section .team-card .team-text p {
+    font-size: 15px;
+  }
+  /* Blog Details CSS */
+  .blog-section .blog-card .blog-text h3 {
+    font-size: 18px;
+  }
+  /* Footer CSS */
+  .footer-area .footer-widget p {
+    font-size: 16px;
+  }
+  .footer-area .footer-widget ul li {
+    font-size: 15px;
+  }
+  .footer-area .pl-35 {
+    padding-left: 20px;
+  }
+  .footer-area .footer-bottom ul li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .footer-area .footer-bottom .copyright-text p {
+    font-size: 14px;
+  }
+  /*----- Home Page One CSS End -----*/
+  /*----- Home Page Two CSS Start -----*/
+  /* Navbar CSS */
+  .navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+  .navbar-area .main-nav .navbar .appoint-btn a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  /* Banner CSS */
+  .banner-slider .slider-items {
+    height: 100%;
+    padding: 100px;
+    padding-bottom: 100px;
+  }
+  .banner-slider .slider-items .slider-text {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+  }
+  .banner-slider .slider-items .slider-text h1 {
+    font-size: 40px;
+  }
+  .banner-slider .owl-prev, .banner-slider .owl-next {
+    top: 35%;
+  }
+  /* Service CSS */
+  .service-style-three .service-card h3 {
+    font-size: 20px;
+  }
+  /* Project CSS */
+  .project-section .project-slider .project-item .project-link p {
+    padding: 10px 50px 10px 20px;
+  }
+  /* Home Page Two CSS End */
+  .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1799px) {
+  .navbar-area::before {
+    width: 35%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  }
+  .navbar-area::after {
+    width: 36%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  }
+  .banner-slider .owl-prev {
+    left: 10%;
+  }
+  .banner-slider .owl-next {
+    right: 10%;
+  }
+  .about-section .about-text ul li {
+    width: 300px;
+  }
+  .facilities-section .facililties-text .section-title h2 {
+    margin: 0 auto 15px 0;
+  }
+  .facilities-section .facililties-text .section-title p {
+    margin: 0 auto 0 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

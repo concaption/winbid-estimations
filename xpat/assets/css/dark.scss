@@ -1,0 +1,479 @@
+/*================================================
+Default CSS
+=================================================*/
+$yellow-color:#ffea00;
+$heading-color: #ffffff;
+$body-color: #ffffff;
+// Switch css
+.switch-box {
+    position: fixed;
+    z-index: 1;
+    left: 3%;
+    bottom: 40px;
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #4d4949;
+        transition: 0.4s;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            left: 2.5px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: url(../../assets/img/night.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    input:checked + .slider {
+        background-color: #cbc1c1;
+    }
+    input:focus + .slider {
+        background-color: #4d4949;
+    }
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: url(../../assets/img/sunny.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .slider {
+        &.round {
+            border-radius: 50px;
+
+            &:before {
+                border-radius: 50%;
+            } 
+        }
+    }
+}
+// Dark Style CSS
+.theme-dark {
+    body {
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+    p {
+        color: #f1f1f1;
+        
+        a {
+            color: #f1f1f1 !important;
+
+            &:hover {
+                color: $yellow-color !important;
+            }
+        }
+    }
+    a {
+        color: $body-color;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: $heading-color !important;
+        a {
+            color: $body-color !important;
+
+            &:hover {
+                color: $yellow-color !important;
+            }
+        }
+    }
+
+    .section-title {
+        span {
+            color: $body-color;
+            &::before {
+                background-color: $body-color;
+            }
+        }
+    }
+    //Banner
+    .banner-style-two {
+        &::before {
+            display: block;
+        }
+        .banner-text {
+            p {
+                color: $body-color;
+            }
+        }
+    }
+    //About
+    .about-section {
+        .about-text {
+            background: #0e0e0e;
+            ul {
+                li {
+                    color: $body-color;
+                }
+            }
+            .theme-btn {
+                .default-btn {
+                    border: 1px solid $body-color;
+                    color: $body-color;
+                }
+            }
+        }
+    }
+    
+    //Services
+    .service-section {
+        .service-slider {
+            .service-items {
+                .service-text {
+                    h3 {
+                        background: #0e0e0e;
+                    }
+                    a {
+                        color: $body-color;
+                        &:hover {
+                            color: $yellow-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .service-style-three {
+        .service-card {
+            .service-btn {
+                color: $body-color;
+                &:hover {
+                    color: $yellow-color;
+                }
+            }
+        }
+    }
+    .service-style-two {
+        .service-items {
+            .service-img {
+                .service-text {
+                    h3 {
+                       background: #0e0e0e;
+                    }
+                }
+            }
+        }
+    }
+    .service-details-area {
+        .service-details-text {
+            .quote-text {
+                background: #0e0e0e;
+                i {
+                    color: $body-color;
+                }
+            }
+            .accordions {
+                .accordion-item {
+                    .accordion-title {
+                        background: #0e0e0e;
+                        i {
+                            color: $body-color;
+                        }
+                    }
+                    .accordion-content {
+                        background-color: #232323;
+                    }
+                }
+            }
+        }
+        .service-sidebar {
+            .search-bar {
+                background-color: #0e0e0e;
+            }
+            .search-bar {
+                form {
+                    .form-group {
+                        .form-control {
+                            background: #000000;
+                            color: $body-color;
+                            &::placeholder {
+                                color: $body-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar-widget {
+                background-color: #0e0e0e;
+                ul {
+                    li {
+                        a {
+                            color: $body-color;
+                            i {
+                                color: $body-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Team
+    .team-style-two {
+        .team-card {
+            .team-text {
+                background: #0e0e0e;
+            }
+        }
+    }
+
+    //Contact
+    .contact-section {
+        .contact-area {
+            .form-group {
+                .form-control {
+                    background-color: #0e0e0e;
+                    color: $body-color;
+                    &::placeholder {
+                        color: $body-color;
+                    }
+                }
+                .message-field {
+                    background-color: #0e0e0e;
+                    color: $body-color;
+                    &::placeholder {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+    .contact-section {
+        .contact-card {
+            background-color: #0e0e0e;
+            ul {
+                li {
+                    color: $body-color;
+                    a {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //Blog
+    .blog-section {
+        .blog-card {
+            .blog-text {
+                .blog-btn {
+                    color: $body-color;
+                    &:hover {
+                        color: $yellow-color;
+                    }
+                }
+            }
+        }
+    }
+    .blog-details-area {
+        .blog-sidebar {
+            .blog-widget {
+                background-color: #0e0e0e;
+                &.search-bar {
+                    form {
+                        .form-group {
+                            .form-control {
+                                background: #000000;
+                                color: $body-color;
+                                &::placeholder {
+                                    color: $body-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            color: $body-color;
+                        }
+                    }
+                }
+            }
+        }
+        .blog-details-text {
+            .blog-comment {
+                background-color: #0e0e0e;
+                .comment-form {
+                    form {
+                        .form-group {
+                            .form-control {
+                                background: #000000;
+                                color: $body-color;
+                                &::placeholder {
+                                    color: $body-color;
+                                }
+                            }
+                            .message-field {
+                                background-color: #000000;
+                                color: $body-color;
+                                &::placeholder {
+                                    color: $body-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .post-navigation {
+                .prev, .next {
+                    a {
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //Company
+    .company-section {
+        .company-slider {
+            background: #1c1b1b;
+        }
+    }
+
+    .join-section {
+        .join-text {
+            .theme-btn {
+                .default-btn {
+                    border: 1px solid $yellow-color;
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    //Project
+    .project-style-two {
+        .project-card {
+            .project-link {
+                p {
+                    background: #0e0e0e;
+                }
+            }
+        }
+    }
+    .project-style-three {
+        .project-menu {
+            ul {
+                li {
+                    color: $yellow-color;
+                    &::before {
+                        background-color: $body-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //Faq
+    .faq-section {
+        .faq-accordian {
+            .accordions {
+                .accordion-item {
+                    .accordion-title {
+                        background: #0e0e0e;
+                        i {
+                            color: $body-color;
+                        }
+                    }
+                    .accordion-content {
+                        background-color: #171717;
+                    }
+                }
+            }
+        }
+    }
+
+    //Sign In
+    .signin-section {
+        .signin-form {
+            background-color: #0e0e0e;
+             form {
+                .form-group {
+                    .form-control {
+                        background: #000000;
+                        color: $body-color;
+                        &::placeholder {
+                            color: $body-color;
+                        }
+                    }
+                }
+                .signin-btn {
+                    border: 1px solid $body-color;
+                    color: $body-color;
+                    &:hover {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    //Sign UP
+    .signup-section {
+        .signup-form {
+            background-color: #0e0e0e;
+            form {
+               .form-group {
+                   .form-control {
+                       background: #000000;
+                       color: $body-color;
+                       &::placeholder {
+                           color: $body-color;
+                       }
+                   }
+               }
+               .signup-btn {
+                   border: 1px solid $body-color;
+                   color: $body-color;
+                   &:hover {
+                       color: #000000;
+                   }
+               }
+           }
+        }
+    }
+
+    //Testimonial
+    .testimonial-section {
+        .testimonial-slider {
+            .testimonial-item {
+                background: #0e0e0e;
+                .client-info {
+                    img {
+                        border: 5px solid #0e0e0e;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

@@ -1,0 +1,475 @@
+/*================================================
+Default CSS
+=================================================*/
+.switch-box {
+  position: fixed;
+  z-index: 1;
+  left: 3%;
+  bottom: 40px;
+}
+
+.switch-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4d4949;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-box .slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 2.5px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0px 15px #2020203d;
+          box-shadow: 0 0px 15px #2020203d;
+  background: url(../../assets/img/night.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.switch-box input:checked + .slider {
+  background-color: #cbc1c1;
+}
+
+.switch-box input:focus + .slider {
+  background-color: #4d4949;
+}
+
+.switch-box input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+  background: url(../../assets/img/sunny.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.switch-box .slider.round {
+  border-radius: 50px;
+}
+
+.switch-box .slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-dark body {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.theme-dark p {
+  color: #f1f1f1;
+}
+
+.theme-dark p a {
+  color: #f1f1f1 !important;
+}
+
+.theme-dark p a:hover {
+  color: #ffea00 !important;
+}
+
+.theme-dark a {
+  color: #ffffff;
+}
+
+.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #ffffff !important;
+}
+
+.theme-dark .h1 a, .theme-dark .h2 a, .theme-dark .h3 a, .theme-dark .h4 a, .theme-dark .h5 a, .theme-dark .h6 a, .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
+  color: #ffffff !important;
+}
+
+.theme-dark .h1 a:hover, .theme-dark .h2 a:hover, .theme-dark .h3 a:hover, .theme-dark .h4 a:hover, .theme-dark .h5 a:hover, .theme-dark .h6 a:hover, .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
+  color: #ffea00 !important;
+}
+
+.theme-dark .section-title span {
+  color: #ffffff;
+}
+
+.theme-dark .section-title span::before {
+  background-color: #ffffff;
+}
+
+.theme-dark .banner-style-two::before {
+  display: block;
+}
+
+.theme-dark .banner-style-two .banner-text p {
+  color: #ffffff;
+}
+
+.theme-dark .about-section .about-text {
+  background: #0e0e0e;
+}
+
+.theme-dark .about-section .about-text ul li {
+  color: #ffffff;
+}
+
+.theme-dark .about-section .about-text .theme-btn .default-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.theme-dark .service-section .service-slider .service-items .service-text h3 {
+  background: #0e0e0e;
+}
+
+.theme-dark .service-section .service-slider .service-items .service-text a {
+  color: #ffffff;
+}
+
+.theme-dark .service-section .service-slider .service-items .service-text a:hover {
+  color: #ffea00;
+}
+
+.theme-dark .service-style-three .service-card .service-btn {
+  color: #ffffff;
+}
+
+.theme-dark .service-style-three .service-card .service-btn:hover {
+  color: #ffea00;
+}
+
+.theme-dark .service-style-two .service-items .service-img .service-text h3 {
+  background: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-details-text .quote-text {
+  background: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-details-text .quote-text i {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-text .accordions .accordion-item .accordion-title {
+  background: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-details-text .accordions .accordion-item .accordion-title i {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-text .accordions .accordion-item .accordion-content {
+  background-color: #232323;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar form .form-group .form-control {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .search-bar form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .sidebar-widget {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-sidebar .sidebar-widget ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-sidebar .sidebar-widget ul li a i {
+  color: #ffffff;
+}
+
+.theme-dark .team-style-two .team-card .team-text {
+  background: #0e0e0e;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-area .form-group .message-field::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-card {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .contact-section .contact-card ul li {
+  color: #ffffff;
+}
+
+.theme-dark .contact-section .contact-card ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .blog-section .blog-card .blog-text .blog-btn {
+  color: #ffffff;
+}
+
+.theme-dark .blog-section .blog-card .blog-text .blog-btn:hover {
+  color: #ffea00;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget.search-bar form .form-group .form-control {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget.search-bar form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget.search-bar form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget.search-bar form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget.search-bar form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-sidebar .blog-widget ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .form-control {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .message-field {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .message-field::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .message-field:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .message-field::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .blog-comment .comment-form form .form-group .message-field::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-text .post-navigation .prev a, .theme-dark .blog-details-area .blog-details-text .post-navigation .next a {
+  color: #ffffff;
+}
+
+.theme-dark .company-section .company-slider {
+  background: #1c1b1b;
+}
+
+.theme-dark .join-section .join-text .theme-btn .default-btn {
+  border: 1px solid #ffea00;
+  color: #ffffff;
+}
+
+.theme-dark .project-style-two .project-card .project-link p {
+  background: #0e0e0e;
+}
+
+.theme-dark .project-style-three .project-menu ul li {
+  color: #ffea00;
+}
+
+.theme-dark .project-style-three .project-menu ul li::before {
+  background-color: #ffffff;
+}
+
+.theme-dark .faq-section .faq-accordian .accordions .accordion-item .accordion-title {
+  background: #0e0e0e;
+}
+
+.theme-dark .faq-section .faq-accordian .accordions .accordion-item .accordion-title i {
+  color: #ffffff;
+}
+
+.theme-dark .faq-section .faq-accordian .accordions .accordion-item .accordion-content {
+  background-color: #171717;
+}
+
+.theme-dark .signin-section .signin-form {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .signin-section .signin-form form .form-group .form-control {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .signin-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.theme-dark .signin-section .signin-form form .signin-btn:hover {
+  color: #000000;
+}
+
+.theme-dark .signup-section .signup-form {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .signup-section .signup-form form .form-group .form-control {
+  background: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .signup-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.theme-dark .signup-section .signup-form form .signup-btn:hover {
+  color: #000000;
+}
+
+.theme-dark .testimonial-section .testimonial-slider .testimonial-item {
+  background: #0e0e0e;
+}
+
+.theme-dark .testimonial-section .testimonial-slider .testimonial-item .client-info img {
+  border: 5px solid #0e0e0e;
+}
+/*# sourceMappingURL=dark.css.map */

@@ -1,0 +1,1531 @@
+/* Color Variable */
+$body-color:#4a483e;
+$heading-color:#1f1c0c;
+$white-color:#ffffff;
+$yellow-color:#ffea00;
+
+@media (max-width:767px) {
+    /*-----  Home Page One Start -----*/  
+    /* Custom CSS */
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .theme-btn {
+        .default-btn {
+            padding: 10px;
+            font-size: 14px;
+            margin: 0 5px;
+            margin-right: 0;
+        }
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 25px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Header CSS */
+    .header-area  {
+        border-bottom: 0;
+        .header-left {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .header-right {
+            text-align: center;
+
+            ul {
+                li {
+                    margin-left: 0;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Navbar CSS */
+    .navbar-area {
+        .mobile-nav {
+            display: block;
+            position: relative;
+
+            .navbar-nav {
+                height: 300px;
+                overflow-y: scroll;
+            }
+
+            .logo {
+                position: absolute;
+                left: 15px;
+                z-index: 99999;
+                max-width: 75px;
+            }
+        }
+        .mean-container {
+            .mean-bar {
+                background-color: $heading-color;
+                padding: 0;
+                box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            a.meanmenu-reveal {
+                padding: 15px 15px 0 0;
+                color: $white-color;
+            }
+
+            a.meanmenu-reveal span {
+                background: $yellow-color;
+                margin-top: -5px;
+            }
+        }
+
+        .mobile-nav nav .navbar-nav .nav-item a {
+            color: #3c0c70;
+
+            i {
+                display: none;
+            }
+        }
+        .main-nav {
+            display: none !important;
+        }
+    }
+
+    /* Banner CSS */
+    .banner-section {
+        text-align: center;
+        height: 100%;
+        padding-top: 150px;
+
+        .banner-text {
+            padding-bottom: 100px;
+            h1 {
+                font-size: 25px;
+                margin-bottom: 25px;
+                line-height: 1.5;
+            }
+
+            p {
+                margin-bottom: 35px;
+            }
+            .theme-btn {
+                .default-btn {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        .banner-img {
+            position: relative;
+            right: 0;
+            max-width: 100%;
+            margin: auto;
+            left: 0;
+        }
+    }
+
+    /* About Section CSS */
+    .about-section {
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            padding: 30px 20px;
+            margin: 0 15px;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+
+            .authore-info {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    /* Service CSS */
+    .service-section {
+        padding-bottom: 120px;
+
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .service-slider {
+            .service-items {
+                width: 100%;
+                max-width: unset;
+                margin: 0;
+
+                .service-text {
+                    margin: 0 10px 10px;
+                }
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: 30% !important;
+                top: inherit !important;
+                bottom: -120px;
+
+                &:hover {
+                    left: 30% !important;
+                }
+            }
+
+            .owl-next {
+                opacity: 1;
+                right: 30% !important;
+                top: inherit !important;
+                bottom: -120px;
+
+                &:hover {
+                    right: 30% !important;
+                }
+            }
+
+            &:hover .owl-next {
+                right: 30% !important;
+            }
+
+            &:hover .owl-prev {
+                left: 30% !important;
+            }
+        }
+    }
+
+    /* Counter CSS */
+    .counter-section {
+        .counter-text {
+            padding: 20px 20px;
+        }
+    }
+
+    /* Project Section CSS */
+    .project-section {
+        padding-bottom: 115px;
+
+        .project-slider {
+            .project-item {
+                .project-link {
+                    p {
+                        padding: 10px 50px 10px 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: 30px !important;
+                top: inherit !important;
+                bottom: -115px;
+
+                &:hover {
+                    left: 30px !important;
+                }
+            }
+
+            .owl-next {
+                opacity: 1;
+                right: 30px !important;
+                top: inherit !important;
+                bottom: -115px;
+
+                &:hover {
+                    right: 30px !important;
+                }
+            }
+
+            &:hover .owl-next {
+                right: 30px !important;
+            }
+
+            &:hover .owl-prev {
+                left: 30px !important;
+            }
+        }
+    }
+
+    /* Video Section CSS */
+    .video-section {
+        .video-text {
+            a  {
+                width: 40px;
+                height: 40px;
+                line-height: 30px;
+
+                i {
+                    font-size: 30px; 
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    /* Blog Section CSS */
+    .blog-section {
+        .blog-card{
+            .blog-text{
+                h3 {                 
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .blog-link {
+            margin-top: 10px;
+        }
+    }
+
+    /* Footer Section CSS */
+    .footer-area {
+        .pl-35 {
+            padding-left: 0;
+        }
+
+        .footer-widget {
+            margin-bottom: 35px;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .footer-bottom {
+            margin-top: 15px;
+            text-align: center;
+            padding: 25px 0;
+
+            ul {
+                margin-bottom: 10px;
+                li {
+                    margin: 0 5px;
+                    font-size: 14px;
+                }
+            }
+
+            .copyright-text {
+                text-align: center;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    /*-----  Home Page One End -----*/
+
+    /*-----  Home Page Two End -----*/ 
+    /* Navbar CSS */
+    .navbar-style-two {
+        .appoint-btn {
+            display: none;
+        }
+    }
+
+    /* Banner CSS */
+    .banner-slider {
+        text-align: center;
+
+        .slider-items {
+            padding-top: 140px;
+            padding-bottom: 150px;
+            height: 100%;
+            font-size: 25px;
+
+            .slider-text {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .owl-prev {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 16px !important;
+            line-height: 40px !important;
+            top: inherit;
+            bottom: 80px;
+            left: 20%;
+        }
+
+        .owl-next {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 16px !important;
+            line-height: 40px !important;
+            top: inherit;
+            bottom: 80px;
+            right: 20%;
+        }
+
+    }
+
+    /* Facilities CSS */
+    .facilities-section {
+        .p-0 {
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+
+        .facilities-img {
+            height: 260px;
+            margin-bottom: 15px;
+        }
+    }
+
+    /* Service CSS */
+    .service-style-three {
+        padding-bottom: 20px;
+        .service-card {
+            padding: 40px 15px 30px 15px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    /*-----  Home Page Two End -----*/ 
+
+    /*-----  Home Page Three End -----*/ 
+    .banner-slider {
+        .slider-items {
+            .slider-text {
+                .theme-btn {
+                    .default-btn {
+                        margin: 0 5px;
+                    }
+
+                    .video-btn {
+                        i {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .join-section {
+        .join-img {
+            position: relative;
+            height: 350px;
+        }
+
+        .join-text {
+            padding: 20px;
+            margin: 0px 15px 50px;      
+        }
+    }
+    /*-----  Home Page Three End -----*/ 
+
+    /*-----  About Page Start -----*/  
+    .page-title {
+        padding: 150px 0 100px;
+
+        .text-start, .text-end {
+            text-align: center !important;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        ul {
+            li {
+                margin-left: 0;
+                margin: 0 15px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about-style-two {
+        .about-text {
+            padding-left: 0;
+        }
+    }
+
+    .contact-section {
+        .contact-area {
+            padding: 20px;
+            margin: 0 10px;
+
+            .default-btn {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+
+        .contact-img {
+            height: 300px;
+            margin: 0 10px;
+        }
+    }
+    /*-----  About Page End -----*/ 
+
+    /*-----  Service Page Start -----*/ 
+    .service-style-two {
+        padding-bottom: 20px;
+
+        .service-items {
+            margin: 0 10px 30px;
+        }
+    }
+    /*-----  Service Page End -----*/ 
+
+    /*-----  Service Page Two Start -----*/ 
+    .service-style-four {
+        padding-bottom: 50px;
+
+        .service-slider {
+            .owl-prev, .owl-next {
+                bottom: -55px;
+            }
+        }
+    }
+
+    .about-style-two {
+        padding-top: 50px;
+    }
+    /*-----  Service Page Two End -----*/ 
+
+    /*-----  Service Details Page Start -----*/
+    .service-details-area {
+        .service-details-text {
+            .accordions {
+                .accordion-item {
+                    .accordion-title {
+                        padding: 10px 15px;
+
+                        h2 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*-----  Service Details Page End -----*/
+
+    /*-----  Project Page One Start -----*/
+    .project-style-four {
+        padding-bottom: 105px;
+
+        .project-slider {
+            .owl-prev, .owl-next {
+                bottom: -70px;
+            }
+        }
+    }
+    /*-----  Project Page One End -----*/
+
+    /*-----  Project Page Two Start -----*/
+    .project-style-three {        
+        .project-menu {
+            ul {
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .p-0 {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .project-card {
+            margin-bottom: 30px;
+
+            a {
+                i {
+                    top: 40%;
+                }
+            }
+        }
+    }
+    /*-----  Project Page Two End -----*/
+
+    /*-----  FAQ Page Start -----*/
+    .faq-section {
+        .faq-accordian {
+            .accordions {
+                .accordion-item {
+                    .accordion-title {
+                        padding: 10px 15px;
+
+                        h2 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*-----  FAQ Page End -----*/
+
+    /*-----  Sign In Page Strat -----*/
+    .signin-section {
+        .signin-form {
+            padding: 15px;
+        }
+    }
+    /*-----  Sign In Page End -----*/
+
+    /*-----  Sign Up Page Start -----*/
+    .signup-section {
+        .signup-form {
+            padding: 15px;
+        }
+    }
+    /*-----  Sign Up Page End -----*/
+
+    /*-----  404 Page Start -----*/
+    .error-section {
+       
+        h1 {
+            font-size: 70px;
+        }  
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .theme-btn {
+            .default-btn {
+                padding: 8px 15px;
+                font-size: 15px;
+            }
+        }
+    }
+    /*-----  404 Page End -----*/
+
+    /*-----  Testimonial Page Start -----*/
+    .testimonial-section {
+        .testimonial-slider {
+            .testimonial-item {
+                .client-info {
+                    text-align: center;
+
+                    img {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto 20px;
+                    }
+                    h3, span {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    /*-----  Testimonial Page End -----*/
+
+    /*-----  Blog Page Start -----*/
+    .blog-section {
+        .pagination {
+            margin-top: 10px;
+            margin-bottom: 35px;
+        }
+    }
+    /*-----  Blog Page End -----*/
+
+    /*-----  Blog Details Page Start -----*/
+    .blog-details-area {
+        .blog-sidebar {
+            .blog-widget {
+                .popular-post {
+                    max-width: 400px;
+                }
+            }
+        }
+
+        .blog-details-text {
+            .blog-comment {
+                padding: 20px;
+            }
+        }
+    }
+    /*-----  Blog Details Page Ebd -----*/
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    /* Custom CSS */
+    .pt-100 {
+        padding-top: 70px;
+    }
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+    .pb-70 {
+        padding-bottom: 40px;
+    }
+   
+    .theme-btn {
+        .default-btn {
+            padding: 10px;
+            font-size: 14px;
+            margin: 0 5px;
+            margin-right: 0;
+        }
+    }
+
+    .section-title {
+        span {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 25px;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+
+        p {
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+
+    /*----- Home Page One Start -----*/
+    /* Header CSS */
+    .header-area {
+        .header-right {
+            text-align: center;
+
+            ul {
+                li {
+                    font-size: 14px;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Navbar CSS */
+    .navbar-area {
+        .mobile-nav {
+            display: block;
+            position: relative;
+
+            .navbar-nav {
+                height: 300px;
+                overflow-y: scroll;
+            }
+
+            .logo {
+                position: absolute;
+                left: 15px;
+                z-index: 99999;
+                max-width: 75px;
+            }
+        }
+        .mean-container {
+            .mean-bar {
+                background-color: $heading-color;
+                padding: 0;
+                box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            a.meanmenu-reveal {
+                padding: 15px 15px 0 0;
+                color: $white-color;
+            }
+
+            a.meanmenu-reveal span {
+                background: $yellow-color;
+                margin-top: -5px;
+            }
+        }
+
+        .mobile-nav nav .navbar-nav .nav-item a {
+            color: #27222c;
+
+            i {
+                display: none;
+            }
+        }
+        .main-nav {
+            display: none !important;
+        }
+    }
+
+    /* Banner Section */
+    .banner-section {
+        text-align: center;
+        height: 100%;
+        padding-top: 150px;
+
+        .banner-text {
+            padding-bottom: 100px;
+            margin: auto;
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+            p {
+                margin-bottom: 35px;
+            }
+        }
+
+        .banner-img {
+            position: relative;
+            right: 0;
+            max-width: 100%;
+            margin: auto;
+            left: 0;
+        }
+    }
+
+    /* About CSS */
+    .page-title {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .about-section {
+        .about-text {
+            margin:0 15px;
+
+            ul {
+                li {
+                    font-size: 15px;
+                }
+            }
+
+            .authore-info {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /* Service CSS */
+    .service-section {
+        .service-slider {
+            .service-text {
+                p {
+                    font-size: 15px;
+                }
+            }
+            .service-items {
+                max-width: 100%;
+            }
+
+            .owl-next {
+                opacity: 1;
+                right: -30px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-next {
+                right: -30px !important;
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: -30px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-prev {
+                left: -30px !important;
+            }
+        }
+    }
+
+    /* Project Section CSS */
+    .project-section {
+        .project-slider {
+            .owl-next {
+                opacity: 1;
+                right: -35px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-next {
+                right: -35px !important;
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: -35px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-prev {
+                left: -35px !important;
+            }
+        }
+    }
+
+    /* Team Section CSS */
+    .team-section {
+        .team-card {
+            &::before {
+                transform: rotate(7deg);
+            }
+        }
+    }
+
+    /* Blog Section */
+    .blog-section {
+        .blog-card {
+            .blog-text {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    /* Footer Area CSS */
+    .footer-area {
+        .pl-35 {
+            padding-left: 0;
+        }
+
+        .footer-widget {
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            text-align: center;
+
+            ul {
+                margin-bottom: 10px;
+            }
+
+            .copyright-text {
+                text-align: center;
+            }
+        }
+    }
+    /*-----  Home Page One End -----*/ 
+
+    /*-----  Home Page Two Start -----*/ 
+    /* Header CSS */
+    .header-style-two {
+        .header-left {
+            a {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 16px;
+                    margin-right: 0;
+                    line-height: 30px;                
+                }
+            }
+        }
+    }
+
+    /* Navbar CSS */
+    .navbar-style-two {
+        .appoint-btn {
+            display: none;
+        }
+    }
+
+    /* Banner CSS */
+    .banner-slider {
+        text-align: center;
+
+        .slider-items {
+            padding-top: 140px;
+            padding-bottom: 200px;
+            height: 100%;
+
+            .slider-text {
+                max-width: 500px;
+                margin: auto;
+            
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .owl-prev {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 16px !important;
+            line-height: 40px !important;
+            top: inherit;
+            bottom: 110px;
+            left: 35%;
+        }
+
+        .owl-next {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 16px !important;
+            line-height: 40px !important;
+            top: inherit;
+            bottom: 110px;
+            right: 35%;
+        }
+
+    }
+
+    /*  About CSS */
+    .about-style-two {
+        .about-text {
+            .section-title {
+                h2 {                  
+                    margin: 0 auto 20px 0;
+                }
+            }
+        }
+    }
+
+    /* Facilities CSS */
+    .facilities-section {
+        .section-title {
+            h2 {
+                margin: 0 auto 20px 0;
+            }
+
+            p {
+                margin:0 auto 0 0;
+            }
+        }
+
+        .p-0 {
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+
+        .facilities-img {
+            height: 500px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    /* Service CSS */
+    .service-style-three {
+        .service-card {
+            padding: 40px 15px 30px 15px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    /* Footer CSS */
+    .footer-area {
+        .footer-widget {
+            margin-bottom: 40px;
+
+            h3 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /*-----  Home Page Two End -----*/ 
+
+    /*-----  Home Page Three Start -----*/ 
+    .banner-section {
+        .banner-text {
+            .theme-btn {
+                .default-btn {
+                    padding: 10px 25px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .join-section {
+        .section-title {
+            h2 {
+                margin:  0 auto 20px 0;
+            }
+
+            p {
+                margin: 0 auto 0 0;
+            }
+        }
+
+        .join-img {
+            position: relative;
+            height: 500px;
+        }
+
+        .join-text {
+            padding: 30px;
+            margin: 0 15px 70px;       
+        }
+    }
+    /*-----  Home Page Three End -----*/ 
+
+    /* About Page Start */
+    .page-title {
+        padding: 150px 0 100px;
+    }
+
+    .about-style-two {
+        .about-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-text {
+            padding-left: 0;
+        }
+    }
+
+    .contact-section {
+        .contact-img {
+            height: 500px;
+        }
+    }
+    /* About Page End */
+
+    /* Project Page Start */
+    .project-style-three {
+        padding-bottom: 70px;
+    }    
+    /* Project Page End */
+
+    /* Testimonial Page Start */
+    .testimonial-section {
+        .testimonial-slider {
+            .testimonial-item {
+                max-width: 100%;
+            }
+        }
+    }
+    /* Testimonial Page End */
+
+    /*-----  Blog Page Start -----*/
+    .blog-section {
+        .pagination {
+            margin-top: 10px;
+            margin-bottom: 35px;
+        }
+    }
+    /*-----  Blog Page End -----*/
+
+    /*-----  Blog Details Page Start -----*/
+    .blog-details-area {
+        .blog-sidebar {
+            .blog-widget {
+                .popular-post {
+                    max-width: 400px;
+                }
+            }
+        }
+
+        .blog-details-text {
+            .blog-comment {
+                padding: 20px;
+            }
+        }
+    }
+    /*-----  Blog Details Page End -----*/
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    /*----- Home Page One CSS Start -----*/
+    /* Default CSS */
+    .section-title {
+        h2 {
+            max-width: 500px;
+            margin: 0 auto 15px;
+        }
+
+        p {
+            max-width: 600px;
+        }
+    }
+
+    /* Header Section CSS */
+    .header-area {
+        .header-right {
+            ul {
+                li {
+                    margin-left: 10px;
+                    font-size: 13px;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Banner CSS */
+    .banner-section {
+        height: 100%;
+        padding: 150px 0;
+
+        .banner-text {
+            max-width: 500px;
+
+            h1 {
+                font-size: 45px;               
+                line-height: 1.5;
+            }
+        }
+
+        .banner-img {
+            right: 10%;
+            max-width: 285px;
+        }
+    }
+
+    /* About CSS */
+    .about-section {
+        .about-text {
+            ul {
+                li {
+                    font-size: 16px; 
+                }
+            }
+        }
+    }
+
+    /* Service CSS */
+    .service-section {
+        .service-slider {
+
+            .service-items {
+                max-width: 100%;
+
+                .service-text {
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .owl-next {
+                opacity: 1;
+                right: -30px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-next {
+                right: -30px !important;
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: -30px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-prev {
+                left: -30px !important;
+            }
+        }
+    }
+    
+    /* Project Section CSS */
+    .project-section {
+        .project-slider {
+            .owl-next {
+                opacity: 1;
+                right: -35px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-next {
+                right: -35px !important;
+            }
+
+            .owl-prev {
+                opacity: 1;
+                left: -35px !important;
+                width: 30px;
+                height: 30px;
+                line-height: 34px !important;
+                font-size: 16px !important;
+            }
+
+            &:hover .owl-prev {
+                left: -35px !important;
+            }
+        }
+    }
+
+    /* Team CSS */
+    .team-section {
+        .team-card {
+            .team-text {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    /* Blog Details CSS */
+    .blog-section {
+        .blog-card {
+            .blog-text {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    /* Footer CSS */
+    .footer-area {
+        .footer-widget {
+
+            p {
+                font-size: 16px;
+            }
+
+            ul {
+                li {
+                    font-size: 15px;
+                }
+            }
+        }
+        .pl-35 {
+            padding-left: 20px;
+        }
+
+        .footer-bottom {            
+            ul {
+                li {
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+            }
+
+
+            .copyright-text {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    /*----- Home Page One CSS End -----*/
+
+    /*----- Home Page Two CSS Start -----*/
+    /* Navbar CSS */
+    .navbar-area {
+        .main-nav {
+            .navbar {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 14px;
+                            margin: 0 15px;
+                        }
+                    }
+                }
+
+                .appoint-btn a {
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    /* Banner CSS */
+    .banner-slider {
+        .slider-items {
+            height: 100%;
+            padding: 100px;
+            padding-bottom: 100px;
+
+            .slider-text {
+                max-width: 500px;
+                text-align: center;
+                margin: auto;
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .owl-prev, .owl-next {
+            top: 35%;
+        }
+    }
+
+    /* Service CSS */
+    .service-style-three {
+        .service-card {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* Project CSS */
+    .project-section {
+        .project-slider {
+            .project-item {
+                .project-link {
+                    p {
+                        padding: 10px 50px 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+    /* Home Page Two CSS End */
+
+    .main-nav {
+        nav {
+            .navbar-nav {
+                .nav-item {
+                    .dropdown-menu {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1799px) {
+    .navbar-area {
+        &::before {
+            width: 35%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+        }
+
+        &::after {
+            width: 36%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+        }
+    }
+
+    .banner-slider {
+        .owl-prev {
+            left: 10%;
+        }
+        .owl-next {
+            right: 10%;
+        }
+    }
+
+    .about-section {
+        .about-text {
+            ul {
+                li {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .facilities-section {
+        .facililties-text {
+            .section-title {
+                h2 {
+                    margin: 0 auto 15px 0;
+                }
+
+                p {
+                    margin: 0 auto 0 0;
+                }
+            }
+        }
+    }
+}
