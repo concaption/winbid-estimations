@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar CSS End */
 /* Banner CSS Start */
 .banner-section {
-  background-image: url(../img/banner/1.jpg);
+  background-image: url(../img/banner/1.webp);
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -761,15 +761,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .counter-section .counter-img2 {
-  background-image: url(../img/counter/2.jpg);
+  background-image: url(../img/counter/2.webp);
 }
 
 .counter-section .counter-img3 {
-  background-image: url(../img/counter/3.jpg);
+  background-image: url(../img/counter/3.webp);
 }
 
 .counter-section .counter-img4 {
-  background-image: url(../img/counter/4.jpg);
+  background-image: url(../img/counter/4.webp);
 }
 
 /* Counter CSS End */
