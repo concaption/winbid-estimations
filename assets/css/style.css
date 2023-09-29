@@ -757,19 +757,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .counter-section .counter-img1 {
-  background-image: url(../img/counter/1.webp);
+  background-image: url(../img/counter/1.jpg);
 }
 
 .counter-section .counter-img2 {
-  background-image: url(../img/counter/2.webp);
+  background-image: url(../img/counter/2.jpg);
 }
 
 .counter-section .counter-img3 {
-  background-image: url(../img/counter/3.webp);
+  background-image: url(../img/counter/3.jpg);
 }
 
 .counter-section .counter-img4 {
-  background-image: url(../img/counter/4.webp);
+  background-image: url(../img/counter/4.jpg);
 }
 
 /* Counter CSS End */
@@ -1600,11 +1600,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner-slider .slider-bg1 {
-  background-image: url(../img/banner/2.jpg);
+  background-image: url(../img/banner/2.webp);
 }
 
 .banner-slider .slider-bg2 {
-  background-image: url(../img/banner/3.jpg);
+  background-image: url(../img/banner/3.webp);
 }
 
 /* Banner CSS End */
@@ -1807,7 +1807,7 @@ h1, h2, h3, h4, h5, h6 {
 /*----- Home Page Two End -----*/
 /*----- Home Page Three Start -----*/
 .banner-style-two {
-  background-image: url(../img/banner/4.jpg);
+  background-image: url(../img/banner/1.webp);
 }
 
 .banner-style-two::before {
