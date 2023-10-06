@@ -1,5 +1,3 @@
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6L7JW5B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 
 jQuery(function ($) {
