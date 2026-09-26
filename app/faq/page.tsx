@@ -4,7 +4,7 @@ import { faqs } from "@/lib/site"
 export const metadata = {
   title: "FAQ: Turnaround, Pricing and Process",
   description:
-    "How long a construction estimate takes, what it costs, which estimating software we use, and how to send your plans. Answers from Winbid Estimation.",
+    "How long a construction estimate takes, what it costs, the software we use and what you receive at the end. Straight answers with real numbers.",
   alternates: { canonical: "/faq" },
 }
 
@@ -22,7 +22,7 @@ export default function FaqPage() {
           as="h1"
           eyebrow="FAQ"
           title="Questions contractors ask before sending plans"
-          lead="Turnaround, cost, software and process. If your question is not here, call us and ask."
+          lead="Turnaround, price, software, and what lands in your inbox at the end. Real numbers rather than a request to get in touch for a quote. If your question is not here, call and ask."
         />
         <div className="mt-10">
           <FaqList items={faqs} />

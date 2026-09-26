@@ -18,9 +18,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Continuously scrolling software marquee. The track holds two copies of the
+   list, so translating by half its width loops seamlessly. */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-scroll 38s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
+  /* Without motion the duplicated half is redundant, so let it wrap instead. */
+  .marquee-track { flex-wrap: wrap; width: 100%; justify-content: center; }
 }
 
 :focus-visible {

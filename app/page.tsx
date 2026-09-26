@@ -8,7 +8,7 @@ import { csiDivisions, faqs, projects, services, site } from "@/lib/site"
 export const metadata = {
   title: `${site.name} - ${site.tagline}`,
   description:
-    "Construction cost estimating for residential, commercial and industrial projects. CSI-division takeoffs delivered in 24 to 48 hours, from $200. Based in Virginia Beach, serving contractors across the United States.",
+    "Construction estimating and takeoff services for contractors. Residential, commercial and industrial estimates by CSI division, in 24 to 48 hours, from $200.",
   alternates: { canonical: "/" },
 }
 
@@ -33,9 +33,9 @@ export default function HomePage() {
               Win bids with expert cost estimation
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              From residential to industrial, we deliver pinpoint accuracy in every estimate, so you
-              can price the job with confidence and move forward. Detailed takeoffs by CSI division,
-              usually back within 24 to 48 hours.
+              Send us the plans and the bid date. You get a line-by-line takeoff priced by CSI
+              division, with labour and material separated, usually inside 24 to 48 hours. Bid with a
+              number you can defend, and stop losing evenings to measuring drawings.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <PrimaryLink href="/contact">Get an estimate</PrimaryLink>
@@ -44,7 +44,7 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-4/3 overflow-hidden rounded-lg">
             <Image
-              src="/img/banner/hero.jpg"
+              src="/img/hero.jpg"
               alt="Construction site under way, the kind of project Winbid Estimation prices"
               fill
               priority
@@ -72,7 +72,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Our services"
           title="Estimation services under one roof"
-          lead="Accurate residential and commercial estimates, industrial MEP scope, renovation work and a virtual estimator who works as part of your team."
+          lead="Residential and commercial estimates, industrial MEP scope and renovation work, plus a dedicated estimator for contractors who bid every week."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {services.map((s) => (
@@ -108,7 +108,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="How it works"
           title="Plans in, priced estimate out"
-          lead="No procurement process and no long onboarding. Send the drawings and the bid date, and we come back with a number you can stand behind."
+          lead="No procurement process, no onboarding call, no minimum commitment. Three steps from drawings to a number you can put in a bid."
         />
         <ol className="mt-12 grid gap-8 md:grid-cols-3">
           {[
@@ -160,7 +160,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Our toolkit"
           title="The software behind the numbers"
-          lead="Takeoffs are measured, priced and checked in the platforms your team already recognises, which is what makes an estimate defensible when a line gets questioned."
+          lead="Measured, priced and checked in the platforms your team already knows. When a general contractor questions a line, the source of the number is something they recognise."
         />
         <div className="mt-12">
           <SoftwareStrip />

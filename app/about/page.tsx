@@ -5,7 +5,7 @@ import { csiDivisions, site } from "@/lib/site"
 export const metadata = {
   title: "About Winbid Estimation",
   description:
-    "Winbid Estimation is a construction cost estimating firm in Virginia Beach, Virginia, providing takeoffs and bid support to contractors, developers and homeowners across the United States.",
+    "Winbid Estimation is a construction cost estimating firm in Virginia Beach, Virginia, preparing quantity takeoffs and bid support for contractors nationwide.",
   alternates: { canonical: "/about" },
 }
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
           as="h1"
           eyebrow="Our company"
           title="Estimating built for the way contractors actually bid"
-          lead="Winbid Estimation provides comprehensive estimation services, whether the job is a single residential build or a large-scale commercial bid."
+          lead="Contractors lose bids for two reasons: the number was wrong, or it went in late. Everything here is built to remove both."
         />
         <div className="relative mt-10 aspect-21/9 overflow-hidden rounded-lg">
           <Image
@@ -72,7 +72,7 @@ export default function AboutPage() {
           </ul>
           <div className="relative aspect-4/3 overflow-hidden rounded-lg">
             <Image
-              src="/img/about/facilities.jpg"
+              src="/img/about/takeoff.jpg"
               alt="Building under construction across multiple trades"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

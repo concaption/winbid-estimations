@@ -5,7 +5,7 @@ import { projects } from "@/lib/site"
 export const metadata = {
   title: "Projects We Have Estimated",
   description:
-    "Industrial, residential and commercial projects estimated by Winbid Estimation, spanning all CSI divisions, from manufacturing facility expansions to retail developments.",
+    "Construction estimates across industrial, residential and commercial projects, from a manufacturing plant expansion to a multi-unit development and a retail build.",
   alternates: { canonical: "/projects" },
 }
 
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
           as="h1"
           eyebrow="Our projects"
           title="Completed projects"
-          lead="A cross-section of the work we estimate, spanning residential, commercial and industrial sectors and the full range of CSI divisions."
+          lead="A cross-section of the work, from single-trade takeoffs to full multi-division estimates against a fixed bid date. Client names are withheld where the work is commercially sensitive."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {projects.map((p) => (

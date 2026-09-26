@@ -1,0 +1,9 @@
+
+> winbid-estimations@1.0.0 start
+> next start -p 3113
+
+▲ Next.js 16.3.6
+- Local:         http://localhost:3113
+- Network:       http://192.168.10.108:3113
+✓ Ready in 189ms
+✓ Running next.config.ts took 41ms

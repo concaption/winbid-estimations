@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import Logo from "@/components/logo"
 import { services, site } from "@/lib/site"
 
 export default function Footer() {
@@ -8,13 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Image
-              src="/logo.svg"
-              alt="Winbid Estimation"
-              width={220}
-              height={48}
-              className="h-10 w-auto"
-            />
+            <Logo />
             <p className="mt-3 max-w-sm text-sm text-gray-600">
               Precision in every estimation, confidence in every project. Construction cost
               estimating for contractors, developers and homeowners across the United States.

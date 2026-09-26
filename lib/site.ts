@@ -129,7 +129,7 @@ export const projects = [
     sector: "Industrial",
     summary:
       "Full-division takeoff for an expansion to an operating manufacturing plant, including structural steel, concrete and the mechanical and electrical scope for the new production area.",
-    image: "/img/project/project-1.jpg",
+    image: "/img/project/industrial.jpg",
   },
   {
     slug: "modern-urban-suburb",
@@ -137,7 +137,7 @@ export const projects = [
     sector: "Residential",
     summary:
       "Repeatable estimates across a multi-unit residential development, with per-unit and per-phase cost breakdowns so the developer could track budget as the build progressed.",
-    image: "/img/project/project-2.jpg",
+    image: "/img/project/residential.jpg",
   },
   {
     slug: "retail-mall-estimation",
@@ -145,7 +145,7 @@ export const projects = [
     sector: "Commercial",
     summary:
       "Bid-stage estimate for a retail development, covering shell, common areas and tenant improvement allowances, delivered against a fixed bid deadline.",
-    image: "/img/project/project-3.jpg",
+    image: "/img/project/commercial.jpg",
   },
 ] as const
 

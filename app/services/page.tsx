@@ -7,7 +7,7 @@ import { csiDivisions, services, site } from "@/lib/site"
 export const metadata = {
   title: "Construction Estimating Services",
   description:
-    "Residential cost estimation, commercial project bidding and a virtual estimation assistant. All sixteen CSI divisions, including industrial MEP, delivered in 24 to 48 hours.",
+    "Construction takeoff and estimating services: residential estimates, commercial bidding and a dedicated virtual estimator. All 16 CSI divisions, MEP included.",
   alternates: { canonical: "/services" },
 }
 
@@ -43,7 +43,7 @@ export default function ServicesPage() {
           as="h1"
           eyebrow="Our services"
           title="Estimation solutions for every project type"
-          lead="Winbid Estimation provides accurate estimates for residential, commercial and industrial work, so you can plan effectively and bid with confidence on precise cost assessments."
+          lead="Whether you are pricing a single custom home or a multi-trade commercial bid, the work is the same: measure everything, price it against real cost data, and set it out so the person reading your bid can follow it."
         />
         <div className="mt-12 space-y-6">
           {services.map((s) => (
@@ -79,7 +79,7 @@ export default function ServicesPage() {
         <SectionHeading
           eyebrow="Coverage"
           title="Expert oversight across all project divisions"
-          lead="From general requirements to electrical work, our team covers site construction, concrete, masonry and every division in between."
+          lead="Division 1 through Division 16, from general requirements to electrical. Nothing is quietly dropped into an allowance because it was awkward to measure."
         />
         <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 md:grid-cols-4">
           {csiDivisions.map((d) => (

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+import Logo from "@/components/logo"
 import { useState } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { nav, site } from "@/lib/site"
@@ -13,14 +13,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" aria-label="Winbid Estimation, home">
-          <Image
-            src="/logo.svg"
-            alt="Winbid Estimation"
-            width={220}
-            height={48}
-            priority
-            className="h-10 w-auto"
-          />
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Main">

@@ -7,7 +7,7 @@ import { site } from "@/lib/site"
 export const metadata = {
   title: "Contact Us",
   description:
-    "Send your construction plans for an estimate. Call +1 804 577 8922 or email admin@winbidestimation.co. Winbid Estimation, Virginia Beach, VA, serving contractors across the United States.",
+    "Send your construction plans and get a priced estimate in 24 to 48 hours. Call +1 804 577 8922 or email admin@winbidestimation.co. Virginia Beach, VA.",
   alternates: { canonical: "/contact" },
 }
 
@@ -34,7 +34,7 @@ export default function ContactPage() {
           as="h1"
           eyebrow="Contact us"
           title="Get in touch with us"
-          lead="Secure your estimate with Winbid Estimation for precise and accurate insights tailored to your company's needs. Send us your plans with the bid date, and we will confirm scope, price and delivery before starting."
+          lead="Send the plans and the bid date. We confirm scope, price and the delivery date in writing before any work starts, so there is no surprise at either end."
         />
 
         <div className="mt-12 grid gap-12 md:grid-cols-5">
@@ -74,7 +74,7 @@ export default function ContactPage() {
 
             <div className="relative mt-8 aspect-4/3 overflow-hidden rounded-lg">
               <Image
-                src="/img/about/contact.jpg"
+                src="/img/contact.jpg"
                 alt="Plans being reviewed before an estimate"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
