@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Container, Section, SectionHeading, CTA, Breadcrumbs } from "@/components/ui"
 import { csiDivisions, site } from "@/lib/site"
 
@@ -24,6 +25,17 @@ export default function AboutPage() {
           title="Estimating built for the way contractors actually bid"
           lead="Winbid Estimation provides comprehensive estimation services, whether the job is a single residential build or a large-scale commercial bid."
         />
+        <div className="relative mt-10 aspect-21/9 overflow-hidden rounded-lg">
+          <Image
+            src="/img/about/site.jpg"
+            alt="Construction site being measured and priced"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 900px"
+            className="object-cover"
+          />
+        </div>
+
         <div className="mt-10 max-w-3xl space-y-5 text-gray-600">
           <p>
             We deliver precise, detailed cost breakdowns that help you make a vision real within a
@@ -50,13 +62,24 @@ export default function AboutPage() {
           title="Expert oversight across every division"
           lead="From general requirements to electrical work, including site construction, concrete, masonry and mechanical scope."
         />
-        <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 md:grid-cols-4">
-          {csiDivisions.map((d) => (
-            <li key={d} className="text-sm text-gray-700">
-              {d}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
+            {csiDivisions.map((d) => (
+              <li key={d} className="text-sm text-gray-700">
+                {d}
+              </li>
+            ))}
+          </ul>
+          <div className="relative aspect-4/3 overflow-hidden rounded-lg">
+            <Image
+              src="/img/about/facilities.jpg"
+              alt="Building under construction across multiple trades"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
       </Section>
 
       <Section>

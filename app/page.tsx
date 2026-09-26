@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image"
+import SoftwareStrip from "@/components/software-strip"
 import { ArrowRight, Clock, FileSpreadsheet, Ruler, CheckCircle2 } from "lucide-react"
 import { Container, Section, SectionHeading, PrimaryLink, OutlineLink, CTA, FaqList } from "@/components/ui"
 import { csiDivisions, faqs, projects, services, site } from "@/lib/site"
@@ -22,7 +24,8 @@ export default function HomePage() {
     <>
       <section className="border-b border-gray-100 bg-white py-20 md:py-28">
         <Container>
-          <div className="max-w-3xl">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+          <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-[color:var(--color-brand)]">
               Construction cost estimating
             </p>
@@ -38,6 +41,17 @@ export default function HomePage() {
               <PrimaryLink href="/contact">Get an estimate</PrimaryLink>
               <OutlineLink href="/services">See what we estimate</OutlineLink>
             </div>
+          </div>
+          <div className="relative aspect-4/3 overflow-hidden rounded-lg">
+            <Image
+              src="/img/banner/hero.jpg"
+              alt="Construction site under way, the kind of project Winbid Estimation prices"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
           </div>
 
           <dl className="mt-16 grid grid-cols-2 gap-8 border-t border-gray-100 pt-10 md:grid-cols-4">
@@ -64,8 +78,18 @@ export default function HomePage() {
           {services.map((s) => (
             <article
               key={s.slug}
-              className="rounded-lg border border-gray-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
+              className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
+              <div className="relative aspect-16/10">
+                <Image
+                  src={s.image}
+                  alt={s.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-7">
               <h3 className="text-xl font-semibold">{s.title}</h3>
               <p className="mt-3 text-gray-600">{s.short}</p>
               <Link
@@ -74,6 +98,7 @@ export default function HomePage() {
               >
                 Read more <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
+              </div>
             </article>
           ))}
         </div>
@@ -133,18 +158,40 @@ export default function HomePage() {
 
       <Section alt>
         <SectionHeading
+          eyebrow="Our toolkit"
+          title="The software behind the numbers"
+          lead="Takeoffs are measured, priced and checked in the platforms your team already recognises, which is what makes an estimate defensible when a line gets questioned."
+        />
+        <div className="mt-12">
+          <SoftwareStrip />
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
           eyebrow="Our projects"
           title="Work we have estimated"
           lead="Projects across residential, commercial and industrial sectors, spanning the full range of CSI divisions."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {projects.map((p) => (
-            <article key={p.slug} className="rounded-lg bg-white p-7 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[color:var(--color-brand)]">
-                {p.sector}
-              </p>
-              <h3 className="mt-2 text-lg font-semibold">{p.title}</h3>
-              <p className="mt-3 text-sm text-gray-600">{p.summary}</p>
+            <article key={p.slug} className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+              <div className="relative aspect-16/10">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-7">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[color:var(--color-brand)]">
+                  {p.sector}
+                </p>
+                <h3 className="mt-2 text-lg font-semibold">{p.title}</h3>
+                <p className="mt-3 text-sm text-gray-600">{p.summary}</p>
+              </div>
             </article>
           ))}
         </div>
@@ -153,7 +200,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section>
+      <Section alt>
         <SectionHeading
           eyebrow="Questions"
           title="What contractors ask us first"

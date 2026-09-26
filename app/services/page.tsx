@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Container, Section, SectionHeading, CTA, Breadcrumbs } from "@/components/ui"
 import { csiDivisions, services, site } from "@/lib/site"
@@ -48,16 +49,27 @@ export default function ServicesPage() {
           {services.map((s) => (
             <article
               key={s.slug}
-              className="rounded-lg border border-gray-100 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
+              className="grid gap-8 overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md md:grid-cols-5"
             >
+              <div className="relative aspect-16/10 md:col-span-2 md:aspect-auto">
+                <Image
+                  src={s.image}
+                  alt={s.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 md:col-span-3 md:pl-0">
               <h2 className="text-2xl font-semibold">{s.title}</h2>
-              <p className="mt-3 max-w-3xl text-gray-600">{s.intro}</p>
+              <p className="mt-3 text-gray-600">{s.intro}</p>
               <Link
                 href={`/services/${s.slug}`}
                 className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[color:var(--color-brand)] hover:underline"
               >
                 About {s.title} <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
+              </div>
             </article>
           ))}
         </div>

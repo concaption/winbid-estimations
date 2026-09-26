@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { CheckCircle2 } from "lucide-react"
 import { Container, Section, SectionHeading, CTA, FaqList, Breadcrumbs } from "@/components/ui"
@@ -61,6 +62,17 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       <Section>
         <SectionHeading as="h1" eyebrow="Service" title={service.title} lead={service.intro} />
+
+        <div className="relative mt-10 aspect-21/9 overflow-hidden rounded-lg">
+          <Image
+            src={service.image}
+            alt={service.title}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 900px"
+            className="object-cover"
+          />
+        </div>
 
         <div className="mt-12 grid gap-10 md:grid-cols-5">
           <div className="md:col-span-3">

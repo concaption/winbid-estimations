@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Mail, MapPin, Phone, Clock } from "lucide-react"
 import { Container, Section, SectionHeading, Breadcrumbs } from "@/components/ui"
 import TallyForm from "@/components/tally-form"
@@ -70,6 +71,16 @@ export default function ContactPage() {
                 {site.hours}
               </li>
             </ul>
+
+            <div className="relative mt-8 aspect-4/3 overflow-hidden rounded-lg">
+              <Image
+                src="/img/about/contact.jpg"
+                alt="Plans being reviewed before an estimate"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
 
             <div className="mt-8 rounded-lg bg-[color:var(--color-surface-alt)] p-6 text-sm text-gray-600">
               <p className="font-medium text-black">Sending plans by email?</p>

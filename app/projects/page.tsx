@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Container, Section, SectionHeading, CTA, Breadcrumbs } from "@/components/ui"
 import { projects } from "@/lib/site"
 
@@ -28,13 +29,24 @@ export default function ProjectsPage() {
           {projects.map((p) => (
             <article
               key={p.slug}
-              className="rounded-lg border border-gray-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
+              className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
+              <div className="relative aspect-16/10">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-7">
               <p className="text-xs font-semibold uppercase tracking-widest text-[color:var(--color-brand)]">
                 {p.sector}
               </p>
               <h2 className="mt-2 text-lg font-semibold">{p.title}</h2>
               <p className="mt-3 text-sm text-gray-600">{p.summary}</p>
+              </div>
             </article>
           ))}
         </div>

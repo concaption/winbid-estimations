@@ -25,6 +25,7 @@ export const site = {
 export const services = [
   {
     slug: "residential-cost-estimation",
+    image: "/img/service/residential.jpg",
     title: "Residential Cost Estimation",
     short:
       "Turn a set of house plans into a budget you can build to, with a line-by-line breakdown of every trade.",
@@ -50,6 +51,7 @@ export const services = [
   },
   {
     slug: "commercial-project-bidding",
+    image: "/img/service/commercial.jpg",
     title: "Commercial Project Bidding",
     short:
       "Tailored cost estimates for commercial bids, built to the CSI divisions your general contractor expects.",
@@ -75,6 +77,7 @@ export const services = [
   },
   {
     slug: "virtual-estimation-assistant",
+    image: "/img/service/virtual.jpg",
     title: "Virtual Estimation Assistant",
     short:
       "A dedicated estimator working as part of your team, so you can bid more jobs without hiring in-house.",
