@@ -1,9 +1,21 @@
 {
-    "routes": [
-      {
-        "src": "/([^/]+)",
-        "dest": "/$1.html"
-      }
-    ]
-  }
-  
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/Services.html", "destination": "/services", "permanent": true },
+    { "source": "/services.html", "destination": "/services", "permanent": true },
+    { "source": "/service-details.html", "destination": "/services/residential-cost-estimation", "permanent": true },
+    { "source": "/project.html", "destination": "/projects", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/team.html", "destination": "/about", "permanent": true },
+    { "source": "/testimonial.html", "destination": "/about", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/blog.html", "destination": "/", "permanent": true },
+    { "source": "/blog-details.html", "destination": "/", "permanent": true },
+    { "source": "/404.html", "destination": "/", "permanent": true },
+    { "source": "/Services/:path*", "destination": "/services", "permanent": true },
+    { "source": "/Projects/:path*", "destination": "/projects", "permanent": true },
+    { "source": "/Blogs/:path*", "destination": "/", "permanent": true }
+  ]
+}
